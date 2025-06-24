@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sekhon Billiard Academy</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+<!-- services links files -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Match your navbar height */
+}
+    /* custom top bar and nav bar */
+  .custom-navbar {
+  background: linear-gradient(90deg, #114703, #66090c, #212222);
+  background-size: 200% 200%;
+  animation: navbarBG 15s ease infinite;
+}
+.custom-navbar img {
+  padding: 0 5px;
+}
+@keyframes navbarBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.navbar .nav-link:hover {
+  color: #00A44D !important;
+}
+
+ /*  Social Media */
+.custom-navbar .social-list {
+  padding-left: 20px;
+ 
+}
+.custom-navbar .social-list li{
+  padding: 0;
+  margin: 0;
+  width: 15px;
+}
+
+ .custom-navbar  .social-list img {
+  width: 40px;
+  height: 30px;
+  border-radius: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-navbar .social-icon:hover img {
+  
+ 
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+
+/* hero section */
+    .carousel-item {
+      height: 120vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      width: 100%;
+      
+    }
+    .carousel-caption {
+      bottom: 20%;
+      z-index: 10;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .carousel-caption p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+     .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    
+   
+
+    /* welcome */
+.welcome-section {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-section p{
+  text-align: justify;
+  text-transform: capitalize;
+  line-height: 1.7;
+}
+
+.welcome-shape {
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #ffc107 0%, transparent 70%);
+  z-index: 0;
+  opacity: 0.2;
+  transform: rotate(25deg);
+}
+    /* Galleray */
+   .gallery-section {
+  background: #222;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.gallery-section .conic-bg {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #ff416c, #ff4b2b, #ff416c);
+  opacity: 0.08;
+  z-index: 0;
+  animation: rotateConic 20s linear infinite;
+}
+
+@keyframes rotateConic {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.gallery-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-item img {
+  transition: transform 0.2s ease;
+  padding: 13px 0;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* services */
+    .service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+/* FAQ */
+.accordion-button {
+  transition: background-color 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1;
+}
+#contact ul li i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* contact */
+.contact-section {
+  background-color: #0c0c0c;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.contact-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #1f1c2c, #f31e0e, #0f4602);
+  background-size: 400% 400%;
+  animation: gradientSlide 20s ease infinite;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Gradient Animation */
+@keyframes gradientSlide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating Blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+  mix-blend-mode: screen;
+  animation: floatBlob 25s ease-in-out infinite alternate;
+}
+
+.blob1 {
+  width: 300px;
+  height: 300px;
+  background: #48dbfb;
+  top: -100px;
+  left: -120px;
+}
+
+.blob2 {
+  width: 250px;
+  height: 250px;
+  background: #feca57;
+  bottom: -100px;
+  right: -100px;
+  animation-delay: 5s;
+}
+
+/* Blob Float Animation */
+@keyframes floatBlob {
+  0% {
+    transform: translate(0, 0) scale(1);
+    border-radius: 40% 60% 60% 40%;
+  }
+  50% {
+    transform: translate(40px, -40px) scale(1.05);
+    border-radius: 60% 40% 40% 60%;
+  }
+  100% {
+    transform: translate(-30px, 30px) scale(1);
+    border-radius: 50% 50% 60% 40%;
+  }
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
+/* Back top Top */
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 999;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+  line-height: 45px;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+  background-color: #f31e0e;
+  color: #fff;
+}
+
+/* footer */
+
+.modern-footer {
+  background: linear-gradient(to right, #111827, #1f2937);
+  border-top: 4px solid #ffc107;
+}
+
+.modern-footer .text-justified {
+  text-align: justify;
+}
+
+.footer-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #ffc107;
+  letter-spacing: 1px;
+}
+
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.footer-nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+.footer-nav a:hover {
+  color: #ffc107;
+}
+
+.modern-footer .social-link {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.modern-footer .social-link:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar shadow-sm">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Logo" width="70" class="me-2">
+      <span class="fw-bold text-white">Sekhon Billiard Academy</span>
+    </a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+
+     <!-- Social Media Icons List -->
+<ul class="social-list d-flex flex-wrap justify-content-center list-unstyled gap-4 py-3">
+  <li>
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+      <img src="images/social/instagram.png" alt="Instagram" >
+    </a>
+  </li>
+  <li>
+    <a href="https://youtube.com" target="_blank" class="social-icon">
+      <img src="images/social/youtube.png" alt="YouTube" >
+    </a>
+  </li>
+  <li>
+    <a href="https://www.google.com/search?q=Sekhon+Billiard+Academy+reviews" target="_blank" class="social-icon">
+      <img src="images/social/google.png" alt="Google Review" >
+    </a>
+  </li>
+  <li>
+    <a href="https://snapchat.com" target="_blank" class="social-icon">
+      <img src="images/social/snapchat.png" alt="Snapchat" >
+    </a>
+  </li>
+  <li>
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+      <img src="images/social/facebook.png" alt="Facebook" >
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" style="background-image: url('images/slide-1.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-white">
+        <h1>SEKHON BILLIARD ACADEMY</h1>
+        <p>Your Home For Fun, Focus, And Friendly Competition.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Contact Us Today</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/slide-2.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-white">
+        <h1>A Place Built for Passionate Players</h1>
+        <p>Visit Sekhon Billiards — the ultimate club for cue sports lovers.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Book a Table</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/slide-3.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-white">
+        <h1>Your Game, Your Glory</h1>
+        <p>Join thrilling tournaments and take your game to the national level.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Explore</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/slide-4.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-white">
+        <h1>Train Like a Pro, Play Like a Star</h1>
+        <p>Get expert coaching, sharpen your skills, and rule the table.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Join Now</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/slide-5.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-white">
+        <h1>Step into the World of Champions</h1>
+        <p>Where every shot counts and legends are made — welcome to Sekhon Billiards.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Welcome Section -->
+ <section id="welcome" class="welcome-section position-relative overflow-hidden py-5">
+  <!-- Background Shapes -->
+  <div class="welcome-shape"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      
+      <!-- Text Content -->
+      <div class="col-lg-6" data-aos="fade-up-right">
+        <h2 class="fw-bold mb-3">Welcome to Sekhon Billiard Academy</h2>
+        <p class="mb-4">
+        At Sekhon Billiard Academy, we don’t just play — we create champions, build focus, and nurture a love for the game.
+
+Located in the heart of Amritsar, near Nexus Mall, our academy offers a professional, friendly space for everyone — from first-time players to skilled cue artists. We believe billiards is not just a game, but a craft that teaches discipline, patience, and precision.
+
+With expert coaching, tournament-standard tables, and a supportive environment, we help players grow — both in skill and confidence. Our training programs, casual play sessions, and regular tournaments ensure that every visit is meaningful.
+
+Whether you want to learn, practice, or compete, Sekhon Billiard Academy is where your journey begins. It's more than just a club — it's a community where passion meets purpose.
+
+Come, experience the spirit of the game.
+</p>
+        <p>Your shot, your story - 🎱</p>
+        <a href="#services" class="btn btn-outline-light btn-lg">Explore Services</a>
+      </div>
+
+      <!-- Image Content -->
+      <div class="col-lg-6 text-center" data-aos="fade-up-left">
+        <img src="images/sekhonbilliardoffice.jpg" alt="Billiards Welcome" class="img-fluid rounded shadow-lg" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5 fw-bold" data-aos="fade-up">Our Services</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0 service-card">
+          <div class="card-body">
+            <div class="mb-3 text-primary">
+              <i class="bi bi-people-fill" style="font-size: 2rem;"></i>
+            </div>
+            <h5 class="card-title fw-semibold">Training</h5>
+            <p class="card-text">Professional coaching by experienced players for all age groups.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0 service-card">
+          <div class="card-body">
+            <div class="mb-3 text-success">
+              <i class="bi bi-trophy-fill" style="font-size: 2rem;"></i>
+            </div>
+            <h5 class="card-title fw-semibold">Tournaments</h5>
+            <p class="card-text">Host and participate in competitive tournaments at state and national level.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 shadow-sm border-0 service-card">
+          <div class="card-body">
+            <div class="mb-3 text-danger">
+              <i class="bi bi-calendar2-check-fill" style="font-size: 2rem;"></i>
+            </div>
+            <h5 class="card-title fw-semibold">Venue Booking</h5>
+            <p class="card-text">Reserve tables or book the entire club space for your special events.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery section -->
+<section id="gallery" class="gallery-section py-5 position-relative text-white">
+  <div class="conic-bg"></div>
+  <div class="container position-relative">
+    <h2 class="gallery-title text-center mb-5 fw-bold" data-aos="zoom-in">Our Gallery</h2>
+    <!-- row 1 -->
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-4.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-4.JPG" alt="Gallery 1" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-5.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-5.JPG" alt="Gallery 2" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-6.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-6.JPG" alt="Gallery 3" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-1.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-1.JPG" alt="Gallery 4" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+    </div>
+     <!-- row 2 -->
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-2.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-2.JPG" alt="Gallery 1" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-3.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-3.JPG" alt="Gallery 2" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-7.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-7.JPG" alt="Gallery 3" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-8.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-8.JPG" alt="Gallery 4" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+       <!-- row 3 -->
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-9.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-9.JPG" alt="Gallery 1" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-10.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-10.JPG" alt="Gallery 2" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-11.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-11.JPG" alt="Gallery 3" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-12.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-12.JPG" alt="Gallery 4" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+       <!-- row 4 -->
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-13.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-13.JPG" alt="Gallery 1" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-14.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-14.JPG" alt="Gallery 2" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-15.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-15.JPG" alt="Gallery 3" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+        <div class="gallery-item overflow-hidden rounded shadow">
+          <a href="images/gallery/sekhon-billiard-academy-16.JPG" data-lightbox="gallery">
+            <img src="images/gallery/sekhon-billiard-academy-16.JPG" alt="Gallery 4" class="img-fluid rounded">
+          </a>
+        </div>
+      </div> 
+      <!-- gallery end -->
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FAQ Section -->
+
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush" id="faqAccordion">
+
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            <i class="bi bi-question-circle me-2 text-primary"></i> How do I join?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Visit the club or contact us to sign up for a membership plan. We welcome beginners and pros!
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            <i class="bi bi-person-check-fill me-2 text-success"></i> Do you offer personal coaching?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we provide one-on-one coaching sessions with expert players tailored to your level.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            <i class="bi bi-calendar-event-fill me-2 text-danger"></i> Can I book the venue for events?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! Our club is available for private bookings, tournaments, or celebrations.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us section -->
+
+<section id="contact" class="contact-section text-white py-5 position-relative">
+  <!-- Animated Background Layer -->
+  <div class="contact-bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+  </div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+
+      <!-- Contact Info -->
+      <div class="col-lg-6" data-aos="fade-down-right">
+        <h2 class="mb-4 fw-bold">Get in Touch</h2>
+        <p class="mb-4">Have questions or want to visit? We’d love to hear from you!</p>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEKHON BILLIARD ACADEMY </li>
+          <li class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-2"></i> #121, Partap Avenue, Phase No. 1, Opp. Nexus Mall, G.T. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road,
+          143001 - Amritsar, Punjab, INDIA.</li>
+          <li class="mb-3"><i class="bi bi-telephone-fill text-info me-2"></i> +91-91111-13126</li>
+          <li><i class="bi bi-envelope-fill text-danger me-2"></i> sekhonbilliards@gmail.com</li>
+        </ul>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-lg-6" data-aos="fade-down-left">
+        <div class="ratio ratio-4x3 rounded shadow">
+          
+             <iframe src="https://www.google.com/maps?q=Sekhon%20Billiard%20Academy,%20121,%20Partap%20Avenue,%20G.T.%20Road,%20Opp.%20Nexus%20Mall,%20Amritsar,%20Punjab,%20INDIA&output=embed"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="modern-footer text-white py-5">
+  <div class="container">
+    <div class="row justify-content-between align-items-center g-4">
+
+      <!-- Brand and Tagline -->
+      <div class="col-lg-4 text-center text-lg-start">
+         <img src="images/logo.png" alt="Logo" width="100" class="footer-logo mb-3 d-block mx-auto" style="max-width: 160px;">
+        <h4 class="footer-brand ">Sekhon Billiard Academy</h4>
+        <p class="text-justified">   Sekhon Billiard Academy is a perfect place to learn, play, and grow with cue sports in a professional and friendly space.</p>
+</div>
+
+      <!-- Center Links -->
+      <div class="col-lg-4 text-center">
+        <ul class="list-inline mb-0 footer-nav">
+          <li class="list-inline-item mx-2"><a href="#">Home</a></li>
+          <li class="list-inline-item mx-2"><a href="#services">Services</a></li>
+          <li class="list-inline-item mx-2"><a href="#gallery">Gallery</a></li>
+          <li class="list-inline-item mx-2"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Contact -->
+     <!-- Social Media Section in Footer -->
+<div class="col-lg-4 col-md-6 text-center text-lg-end">
+  <h6 class="fw-bold mb-3">Follow Us</h6>
+  <div class="social-icons d-flex justify-content-center justify-content-lg-end gap-3">
+    <a href="https://instagram.com" target="_blank" class="text-white social-link">
+      <i class="bi bi-instagram fs-4"></i>
+    </a>
+    <a href="https://youtube.com" target="_blank" class="text-white social-link">
+      <i class="bi bi-youtube fs-4"></i>
+    </a>
+    <a href="https://www.google.com" target="_blank" class="text-white social-link">
+      <i class="bi bi-google fs-4"></i>
+    </a>
+    <a href="https://snapchat.com" class="text-white social-link">
+      <i class="bi bi-snapchat fs-4"></i>
+    </a>
+    <a href="https://facebook.com" class="text-white social-link">
+      <i class="bi bi-facebook fs-4"></i>
+    </a>
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="container">
+  <div class="row text-center text-md-start justify-content-between align-items-center border-top border-secondary pt-4 mt-4 small">
+    
+    <!-- Left: Copyright -->
+    <div class="col-md-6 mb-2 mb-md-0">
+      &copy; 2025 <strong>Sekhon Billiard Academy</strong>. All rights reserved.
+    </div>
+    
+    <!-- Right: Designed By -->
+    <div class="col-md-6 text-md-end">
+      <small>
+        Designed by:
+        📞 <a href="tel:+919780470275" class="text-warning text-decoration-none">Call Now</a> |
+        📧 <a href="mailto:manmohandeveloper@gmail.com" class="text-warning text-decoration-none">Contact Now</a>
+      </small>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+  
+   
+</footer>
+
+
+<!-- <footer class="bg-dark text-white text-center py-4">
+  <div class="container">&copy; 2025 Sekhon Billiard Academy. All rights reserved.</div>
+   <small>
+      Designed by : 
+      📞 <a href="tel:+919780470275" class="text-warning text-decoration-none">Call Now</a> |
+      📧 <a href="mailto:manmohandeveloper@gmail.com" class="text-warning text-decoration-none">Contact Now</a>
+    </small>
+</footer> -->
+
+<!-- Back to Top Button -->
+<a href="#" class="btn btn-primary btn-lg back-to-top" id="backToTopBtn">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script>
+  // Show button on scroll
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top
+  backToTopBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+
+</body>
+</html>
