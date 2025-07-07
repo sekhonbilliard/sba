@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sekhon Billiard Academy</title>
+  <title>Sekhon Billiards Academy</title>
+ 
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   
@@ -13,334 +14,12 @@
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-
   <link rel="stylesheet" href="styles.css">
-  <style>
-    html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Match your navbar height */
-}
-    /* custom top bar and nav bar */
-  .custom-navbar {
-  background: linear-gradient(90deg, #114703, #66090c, #212222);
-  background-size: 200% 200%;
-  animation: navbarBG 15s ease infinite;
-}
-.custom-navbar img {
-  padding: 0 5px;
-}
-@keyframes navbarBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.navbar .nav-link:hover {
-  color: #00A44D !important;
-}
-
- /*  Social Media */
-.custom-navbar .social-list {
-  padding-left: 20px;
- 
-}
-.custom-navbar .social-list li{
-  padding: 0;
-  margin: 0;
-  width: 15px;
-}
-
- .custom-navbar  .social-list img {
-  width: 40px;
-  height: 30px;
-  border-radius: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.custom-navbar .social-icon:hover img {
+  <script>
   
- 
-  transform: scale(1.15);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-}
-
-
-/* hero section */
-    .carousel-item {
-      height: 120vh;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      width: 100%;
-      
-    }
-    .carousel-caption {
-      bottom: 20%;
-      z-index: 10;
-      animation: fadeInUp 1.2s ease-in-out;
-    }
-    .carousel-caption h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .carousel-caption p {
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-      text-transform: capitalize;
-    }
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(30px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-     .overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-    
+  </script>
+  <style>
    
-
-    /* welcome */
-.welcome-section {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
-  color: white;
-  position: relative;
-  z-index: 1;
-}
-
-.welcome-section p{
-  text-align: justify;
-  text-transform: capitalize;
-  line-height: 1.7;
-}
-
-.welcome-shape {
-  position: absolute;
-  top: -50px;
-  right: -100px;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, #ffc107 0%, transparent 70%);
-  z-index: 0;
-  opacity: 0.2;
-  transform: rotate(25deg);
-}
-    /* Galleray */
-   .gallery-section {
-  background: #222;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.gallery-section .conic-bg {
-  content: "";
-  position: absolute;
-  top: -30%;
-  left: -30%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(from 0deg, #ff416c, #ff4b2b, #ff416c);
-  opacity: 0.08;
-  z-index: 0;
-  animation: rotateConic 20s linear infinite;
-}
-
-@keyframes rotateConic {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-.gallery-section .container {
-  position: relative;
-  z-index: 2;
-}
-
-.gallery-item img {
-  transition: transform 0.2s ease;
-  padding: 13px 0;
-}
-.gallery-item:hover img {
-  transform: scale(1.05);
-}
-
-/* services */
-    .service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 1rem;
-}
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-}
-/* FAQ */
-.accordion-button {
-  transition: background-color 0.3s ease;
-}
-.accordion-button:not(.collapsed) {
-  background-color: #f1f1f1;
-}
-#contact ul li i {
-  font-size: 1.2rem;
-  vertical-align: middle;
-}
-
-/* contact */
-.contact-section {
-  background-color: #0c0c0c;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.contact-bg {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, #1f1c2c, #f31e0e, #0f4602);
-  background-size: 400% 400%;
-  animation: gradientSlide 20s ease infinite;
-  z-index: 0;
-  opacity: 0.6;
-}
-
-/* Gradient Animation */
-@keyframes gradientSlide {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Floating Blobs */
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.08;
-  mix-blend-mode: screen;
-  animation: floatBlob 25s ease-in-out infinite alternate;
-}
-
-.blob1 {
-  width: 300px;
-  height: 300px;
-  background: #48dbfb;
-  top: -100px;
-  left: -120px;
-}
-
-.blob2 {
-  width: 250px;
-  height: 250px;
-  background: #feca57;
-  bottom: -100px;
-  right: -100px;
-  animation-delay: 5s;
-}
-
-/* Blob Float Animation */
-@keyframes floatBlob {
-  0% {
-    transform: translate(0, 0) scale(1);
-    border-radius: 40% 60% 60% 40%;
-  }
-  50% {
-    transform: translate(40px, -40px) scale(1.05);
-    border-radius: 60% 40% 40% 60%;
-  }
-  100% {
-    transform: translate(-30px, 30px) scale(1);
-    border-radius: 50% 50% 60% 40%;
-  }
-}
-
-.contact-section .container {
-  position: relative;
-  z-index: 2;
-}
-/* Back top Top */
-/* Back to Top Button */
-.back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
-  z-index: 999;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  padding: 0;
-  text-align: center;
-  line-height: 45px;
-  font-size: 24px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: all 0.3s ease-in-out;
-}
-
-.back-to-top:hover {
-  background-color: #f31e0e;
-  color: #fff;
-}
-
-/* footer */
-
-.modern-footer {
-  background: linear-gradient(to right, #111827, #1f2937);
-  border-top: 4px solid #ffc107;
-}
-
-.modern-footer .text-justified {
-  text-align: justify;
-}
-
-.footer-brand {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  color: #ffc107;
-  letter-spacing: 1px;
-}
-
-.footer-nav a {
-  color: #ccc;
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-  padding-bottom: 2px;
-  transition: all 0.3s;
-}
-
-.footer-nav a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #ffc107;
-  transition: width 0.3s;
-  margin: auto;
-}
-
-.footer-nav a:hover::after {
-  width: 100%;
-}
-
-.footer-nav a:hover {
-  color: #ffc107;
-}
-
-.modern-footer .social-link {
-  transition: color 0.3s, transform 0.3s;
-}
-
-.modern-footer .social-link:hover {
-  color: #ffc107;
-  transform: scale(1.2);
-}
-
   </style>
 </head>
 <body>
@@ -351,7 +30,7 @@
     <!-- Logo -->
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="images/logo.png" alt="Logo" width="70" class="me-2">
-      <span class="fw-bold text-white">Sekhon Billiard Academy</span>
+      <span class="fw-bold ">Sekhon Billiards Academy</span>
     </a>
 
     <!-- Toggle button -->
@@ -362,40 +41,42 @@
     <!-- Nav Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-         <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+         <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link  text-dark" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link  text-dark" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link  text-dark" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link  text-dark" href="#contact">Contact</a></li>
       </ul>
 
      <!-- Social Media Icons List -->
 <ul class="social-list d-flex flex-wrap justify-content-center list-unstyled gap-4 py-3">
   <li>
-    <a href="https://instagram.com" target="_blank" class="social-icon">
+    <a href="https://www.facebook.com/share/1Fmb5sxDWA/" target="_blank" class="social-icon">
+      <img src="images/social/facebook.png" alt="Facebook" >
+    </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/sekhon_billiards_academy?igsh=MXFrb3I3OWhhZWF2MQ==" target="_blank" class="social-icon">
       <img src="images/social/instagram.png" alt="Instagram" >
     </a>
   </li>
   <li>
-    <a href="https://youtube.com" target="_blank" class="social-icon">
+    <a href="https://youtube.com/@sekhonbilliards2251?si=mFTwfWKUvbAXsZx-" target="_blank" class="social-icon">
       <img src="images/social/youtube.png" alt="YouTube" >
     </a>
   </li>
   <li>
-    <a href="https://www.google.com/search?q=Sekhon+Billiard+Academy+reviews" target="_blank" class="social-icon">
-      <img src="images/social/google.png" alt="Google Review" >
-    </a>
-  </li>
-  <li>
-    <a href="https://snapchat.com" target="_blank" class="social-icon">
+    <a href="https://www.snapchat.com/add/sekhonbilliards?share_id=YYcwxVAHtLI&locale=en-IN" target="_blank" class="social-icon">
       <img src="images/social/snapchat.png" alt="Snapchat" >
     </a>
   </li>
   <li>
-    <a href="https://facebook.com" target="_blank" class="social-icon">
-      <img src="images/social/facebook.png" alt="Facebook" >
+    <a href="https://g.page/r/CZLIEHhN2lxdEBM/review" target="_blank" class="social-icon">
+      <img src="images/social/google.png" alt="Google Review" >
     </a>
   </li>
+  
+  
 </ul>
 
     </div>
@@ -406,23 +87,37 @@
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
-    <div class="carousel-item active" style="background-image: url('images/slide-1.jpg');">
-      <div class="overlay"></div>
-      <div class="carousel-caption text-white">
-        <h1>SEKHON BILLIARD ACADEMY</h1>
-        <p>Your Home For Fun, Focus, And Friendly Competition.</p>
-        <a href="#contact" class="btn btn-warning btn-lg">Contact Us Today</a>
-      </div>
-    </div>
+   <div class="carousel-item active" style="background-image: url('images/slide-1.jpg');">
+  <div class="overlay"></div>
+  <div class="carousel-caption text-white">
+    <h1>SEKHON BILLIARDS ACADEMY</h1>
+    <p>Your Home For Fun, Focus, And Friendly Competition.</p>
 
-    <div class="carousel-item" style="background-image: url('images/slide-2.jpg');">
-      <div class="overlay"></div>
-      <div class="carousel-caption text-white">
-        <h1>A Place Built for Passionate Players</h1>
-        <p>Visit Sekhon Billiards — the ultimate club for cue sports lovers.</p>
-        <a href="#contact" class="btn btn-warning btn-lg">Book a Table</a>
-      </div>
+    <!-- Social Media Icons -->
+    <!-- Social Media Icons using Custom Images -->
+    <div class="d-flex justify-content-center gap-3 my-3 flex-wrap">
+      <a href="https://www.facebook.com/share/1Fmb5sxDWA/" target="_blank">
+        <img src="images/social/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.instagram.com/sekhon_billiards_academy?igsh=MXFrb3I3OWhhZWF2MQ==" target="_blank">
+        <img src="images/social/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://youtube.com/@sekhonbilliards2251?si=mFTwfWKUvbAXsZx-" target="_blank">
+        <img src="images/social/youtube.png" alt="YouTube" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.snapchat.com/https://www.snapchat.com/add/sekhonbilliards?share_id=YYcwxVAHtLI&locale=en-IN" target="_blank">
+        <img src="images/social/snapchat.png" alt="Snapchat" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://g.page/r/CZLIEHhN2lxdEBM/review" target="_blank">
+        <img src="images/social/google.png" alt="Map" style="width: 40px; height: 40px;">
+      </a>
     </div>
+    <a href="#contact" class="btn btn-warning btn-lg">Contact Us Today</a>
+  </div>
+</div>
+
+
+   
 
     <div class="carousel-item" style="background-image: url('images/slide-3.jpg');">
       <div class="overlay"></div>
@@ -441,7 +136,14 @@
         <a href="#contact" class="btn btn-warning btn-lg">Join Now</a>
       </div>
     </div>
-
+     <div class="carousel-item" style="background-image: url('images/slide-2.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-white">
+        <h1>A Place Built for Passionate Players</h1>
+        <p>Visit Sekhon Billiards — the ultimate club for cue sports lovers.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Book a Table</a>
+      </div>
+    </div>
     <div class="carousel-item" style="background-image: url('images/slide-5.jpg');">
       <div class="overlay"></div>
       <div class="carousel-caption text-white">
@@ -470,15 +172,15 @@
       
       <!-- Text Content -->
       <div class="col-lg-6" data-aos="fade-up-right">
-        <h2 class="fw-bold mb-3">Welcome to Sekhon Billiard Academy</h2>
+        <h2 class="fw-bold mb-3">Welcome to Sekhon Billiards Academy</h2>
         <p class="mb-4">
-        At Sekhon Billiard Academy, we don’t just play — we create champions, build focus, and nurture a love for the game.
+        At Sekhon Billiards Academy, we don’t just play — we create champions, build focus, and nurture a love for the game.
 
 Located in the heart of Amritsar, near Nexus Mall, our academy offers a professional, friendly space for everyone — from first-time players to skilled cue artists. We believe billiards is not just a game, but a craft that teaches discipline, patience, and precision.
 
 With expert coaching, tournament-standard tables, and a supportive environment, we help players grow — both in skill and confidence. Our training programs, casual play sessions, and regular tournaments ensure that every visit is meaningful.
 
-Whether you want to learn, practice, or compete, Sekhon Billiard Academy is where your journey begins. It's more than just a club — it's a community where passion meets purpose.
+Whether you want to learn, practice, or compete, Sekhon Billiards Academy is where your journey begins. It's more than just a club — it's a community where passion meets purpose.
 
 Come, experience the spirit of the game.
 </p>
@@ -543,155 +245,77 @@ Come, experience the spirit of the game.
 
 
 <!-- Gallery section -->
-<section id="gallery" class="gallery-section py-5 position-relative text-white">
-  <div class="conic-bg"></div>
-  <div class="container position-relative">
-    <h2 class="gallery-title text-center mb-5 fw-bold" data-aos="zoom-in">Our Gallery</h2>
-    <!-- row 1 -->
-    <div class="row g-4 justify-content-center">
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-4.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-4.JPG" alt="Gallery 1" class="img-fluid rounded">
-          </a>
-        </div>
+<!-- 🔳 Gallery Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Image Gallery</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-1.jpg" class="img-fluid rounded gallery-img" alt="Image 1" data-index="0">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-5.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-5.JPG" alt="Gallery 2" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-2.jpg" class="img-fluid rounded gallery-img" alt="Image 2" data-index="1">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-6.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-6.JPG" alt="Gallery 3" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-3.jpg" class="img-fluid rounded gallery-img" alt="Image 3" data-index="2">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-1.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-1.JPG" alt="Gallery 4" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-4.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-    </div>
-     <!-- row 2 -->
-    <div class="row g-4 justify-content-center">
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-2.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-2.JPG" alt="Gallery 1" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-5.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-3.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-3.JPG" alt="Gallery 2" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-6.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-7.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-7.JPG" alt="Gallery 3" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-7.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-8.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-8.JPG" alt="Gallery 4" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-8.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-       <!-- row 3 -->
-    <div class="row g-4 justify-content-center">
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-9.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-9.JPG" alt="Gallery 1" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-9.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-10.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-10.JPG" alt="Gallery 2" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-10.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-11.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-11.JPG" alt="Gallery 3" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-11.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-12.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-12.JPG" alt="Gallery 4" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-12.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-       <!-- row 4 -->
-    <div class="row g-4 justify-content-center">
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-13.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-13.JPG" alt="Gallery 1" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-13.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="100">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-14.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-14.JPG" alt="Gallery 2" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-14.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="200">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-15.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-15.JPG" alt="Gallery 3" class="img-fluid rounded">
-          </a>
-        </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-15.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
       </div>
-
-      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="300">
-        <div class="gallery-item overflow-hidden rounded shadow">
-          <a href="images/gallery/sekhon-billiard-academy-16.JPG" data-lightbox="gallery">
-            <img src="images/gallery/sekhon-billiard-academy-16.JPG" alt="Gallery 4" class="img-fluid rounded">
-          </a>
-        </div>
-      </div> 
-      <!-- gallery end -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/gallery/sba-16.jpg" class="img-fluid rounded gallery-img" alt="Image 4" data-index="3">
+      </div>
+      <!-- Add more images similarly -->
     </div>
   </div>
 </section>
 
-
+<!-- 🖼️ Modal for Large Image Preview -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-black text-white position-relative">
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid rounded" alt="Preview" />
+      </div>
+      <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button id="prevBtn" class="btn btn-light position-absolute start-0 top-50 translate-middle-y ms-2">⟨</button>
+      <button id="nextBtn" class="btn btn-light position-absolute end-0 top-50 translate-middle-y me-2">⟩</button>
+    </div>
+  </div>
+</div>
 
 
 <!-- FAQ Section -->
@@ -761,12 +385,34 @@ Come, experience the spirit of the game.
         <h2 class="mb-4 fw-bold">Get in Touch</h2>
         <p class="mb-4">Have questions or want to visit? We’d love to hear from you!</p>
         <ul class="list-unstyled fs-5">
-          <li class="mb-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEKHON BILLIARD ACADEMY </li>
+          <li class="mb-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEKHON BILLIARDS ACADEMY </li>
           <li class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-2"></i> #121, Partap Avenue, Phase No. 1, Opp. Nexus Mall, G.T. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road,
           143001 - Amritsar, Punjab, INDIA.</li>
           <li class="mb-3"><i class="bi bi-telephone-fill text-info me-2"></i> +91-91111-13126</li>
           <li><i class="bi bi-envelope-fill text-danger me-2"></i> sekhonbilliards@gmail.com</li>
         </ul>
+         <!-- Social Media Icons using Custom Images -->
+     <!-- Social Media Icons List -->
+ <div class="d-flex justify-content-center gap-3 my-3 flex-wrap">
+      <a href="https://www.facebook.com/share/1Fmb5sxDWA/" target="_blank">
+        <img src="images/social/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/social/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/social/youtube.png" alt="YouTube" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.snapchat.com/" target="_blank">
+        <img src="images/social/snapchat.png" alt="Snapchat" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.google.com/maps/place/Sekhon+Billiard+Academy" target="_blank">
+        <img src="images/social/google.png" alt="Map" style="width: 40px; height: 40px;">
+      </a>
+    </div>
+   
+  
+
       </div>
 
       <!-- Google Map -->
@@ -794,8 +440,8 @@ Come, experience the spirit of the game.
       <!-- Brand and Tagline -->
       <div class="col-lg-4 text-center text-lg-start">
          <img src="images/logo.png" alt="Logo" width="100" class="footer-logo mb-3 d-block mx-auto" style="max-width: 160px;">
-        <h4 class="footer-brand ">Sekhon Billiard Academy</h4>
-        <p class="text-justified">   Sekhon Billiard Academy is a perfect place to learn, play, and grow with cue sports in a professional and friendly space.</p>
+        <h4 class="footer-brand ">Sekhon Billiards Academy</h4>
+        <p class="text-justified">   Sekhon Billiards Academy is a perfect place to learn, play, and grow with cue sports in a professional and friendly space.</p>
 </div>
 
       <!-- Center Links -->
@@ -813,21 +459,22 @@ Come, experience the spirit of the game.
 <div class="col-lg-4 col-md-6 text-center text-lg-end">
   <h6 class="fw-bold mb-3">Follow Us</h6>
   <div class="social-icons d-flex justify-content-center justify-content-lg-end gap-3">
-    <a href="https://instagram.com" target="_blank" class="text-white social-link">
-      <i class="bi bi-instagram fs-4"></i>
-    </a>
-    <a href="https://youtube.com" target="_blank" class="text-white social-link">
-      <i class="bi bi-youtube fs-4"></i>
-    </a>
-    <a href="https://www.google.com" target="_blank" class="text-white social-link">
-      <i class="bi bi-google fs-4"></i>
-    </a>
-    <a href="https://snapchat.com" class="text-white social-link">
-      <i class="bi bi-snapchat fs-4"></i>
-    </a>
-    <a href="https://facebook.com" class="text-white social-link">
+     <a href="https://www.facebook.com/share/1Fmb5sxDWA/" class="text-white social-link">
       <i class="bi bi-facebook fs-4"></i>
     </a>
+    <a href="https://www.instagram.com/sekhon_billiards_academy?igsh=MXFrb3I3OWhhZWF2MQ==" target="_blank" class="text-white social-link">
+      <i class="bi bi-instagram fs-4"></i>
+    </a>
+    <a href="https://youtube.com/@sekhonbilliards2251?si=mFTwfWKUvbAXsZx-" target="_blank" class="text-white social-link">
+      <i class="bi bi-youtube fs-4"></i>
+    </a>
+    <a href="https://www.snapchat.com/add/sekhonbilliards?share_id=YYcwxVAHtLI&locale=en-IN" class="text-white social-link">
+      <i class="bi bi-snapchat fs-4"></i>
+    </a>
+    <a href="https://g.page/r/CZLIEHhN2lxdEBM/review" target="_blank" class="text-white social-link">
+      <i class="bi bi-google fs-4"></i>
+    </a>
+       
   </div>
 </div>
 
@@ -840,7 +487,7 @@ Come, experience the spirit of the game.
     
     <!-- Left: Copyright -->
     <div class="col-md-6 mb-2 mb-md-0">
-      &copy; 2025 <strong>Sekhon Billiard Academy</strong>. All rights reserved.
+      &copy; 2025 <strong>Sekhon Billiards Academy</strong>. All rights reserved.
     </div>
     
     <!-- Right: Designed By -->
@@ -888,6 +535,10 @@ Come, experience the spirit of the game.
     duration: 1000,
     once: true
   });
+
+
+
+  
 </script>
 
 <script>
@@ -906,6 +557,31 @@ Come, experience the spirit of the game.
   backToTopBtn.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  
+</script>
+<script>
+  const images = document.querySelectorAll('.gallery-img');
+  const modalImage = document.getElementById('modalImage');
+  const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+  let currentIndex = 0;
+
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      modalImage.src = img.src;
+      modal.show();
+      currentIndex = index;
+    });
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImage.src = images[currentIndex].src;
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImage.src = images[currentIndex].src;
   });
 </script>
 
